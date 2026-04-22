@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:wght@300;600&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --ink: #1a1a1a;
+  --ink-inv: #ffffff;
+  --muted: #5a5a5a;
+  --hint: #9a9a9a;
+  --surf: #ffffff;
+  --surf2: #f5f5f3;
+  --surf3: #eeede9;
+  --border: rgba(0,0,0,0.10);
+  --border2: rgba(0,0,0,0.18);
+  --green: #1D9E75;
+  --green-bg: #E1F5EE;
+  --green-text: #0F6E56;
+  --amber: #BA7517;
+  --amber-bg: #FAEEDA;
+  --red: #A32D2D;
+  --red-bg: #FCEBEB;
+  --blue: #185FA5;
+  --blue-bg: #E6F1FB;
+  --blue-text: #0C447C;
+  --purple: #534AB7;
+  --purple-bg: #EEEDFE;
+  --r: 10px;
+  --r-sm: 6px;
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-mono: 'DM Mono', monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #e8e6de;
+    --ink-inv: #1a1a1a;
+    --muted: #a8a69e;
+    --hint: #6a6860;
+    --surf: #1e1d1b;
+    --surf2: #252422;
+    --surf3: #161513;
+    --border: rgba(255,255,255,0.10);
+    --border2: rgba(255,255,255,0.18);
+    --green-bg: #04342C;
+    --green-text: #9FE1CB;
+    --amber-bg: #412402;
+    --red-bg: #501313;
+    --blue-bg: #042C53;
+    --blue-text: #B5D4F4;
+    --purple-bg: #26215C;
+  }
+}
+
+html, body { height: 100%; font-family: system-ui, -apple-system, sans-serif; font-size: 13px; color: var(--ink); background: var(--surf3); }
+
+button { font-family: inherit; cursor: pointer; }
+input, select, textarea { font-family: inherit; }
+a { color: inherit; text-decoration: none; }
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 2px; }
